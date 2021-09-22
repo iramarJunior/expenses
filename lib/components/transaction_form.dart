@@ -38,7 +38,7 @@ class TransactionForm extends StatelessWidget {
               textInputAction: TextInputAction.done,
               keyboardType: const TextInputType.numberWithOptions(
                 decimal: true,
-                signed: true,
+                // signed: true,
               ),
               onSubmitted: (_) => _submitForm(),
               decoration: const InputDecoration(

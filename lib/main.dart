@@ -8,7 +8,12 @@ class ExpensesApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: HomePage());
+    return GestureDetector(
+      onTap: () => FocusScope.of(context).requestFocus(FocusNode()),
+      child: const MaterialApp(
+        home: HomePage(),
+      ),
+    );
   }
 }
 
